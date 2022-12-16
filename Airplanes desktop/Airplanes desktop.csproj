@@ -6,6 +6,7 @@
     <RootNamespace>Airplanes_desktop</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>airplane_icon_146897.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -69,6 +70,10 @@
     <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_tu204.png" />
     <None Remove="Resources\Pictures\tu_logo.png" />
     <None Remove="View\AirplanesScreensaveDesktop.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="airplane_icon_146897.ico" />
   </ItemGroup>
 
   <ItemGroup>

@@ -34,6 +34,11 @@
                 <RowDefinition MinHeight="300"/>
             </Grid.RowDefinitions>
 
+            <Button x:Name="BackToMainMenue"
+                Style="{DynamicResource ButtonStyleMainMenu}"
+                Content="Главное меню"
+                Grid.Column="4" Grid.Row="9" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,30" Click="BackToMainMenue_Click"/>
+
             <Border Style="{DynamicResource BorderStyleMainHandbook}"
                 Grid.Column="0" HorizontalAlignment="Right" Height="2500" Grid.RowSpan="10" VerticalAlignment="Top" Width="1.3"/>
 

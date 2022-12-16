@@ -231,5 +231,12 @@ namespace Airplanes_desktop.View
             personalAirplaneWindow.Show();
             this.Close();
         }
+
+        private void BackToMainMenue_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenueWindow mainMenueWindow = new MainMenueWindow();
+            mainMenueWindow.Show();
+            this.Close();
+        }
     }
 }
