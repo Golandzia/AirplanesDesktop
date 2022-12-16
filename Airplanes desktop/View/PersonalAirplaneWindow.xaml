@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Airplanes_desktop.View"
         mc:Ignorable="d"
-        Title="PersonalAirplaneWindow" Height="700" Width="1100">
+        Title="Информация о модели" Height="700" Width="1100">
         <ScrollViewer>
         <Grid Style="{DynamicResource BackgroundWindowGradient}">
             <Grid.ColumnDefinitions>

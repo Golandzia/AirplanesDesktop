@@ -1,0 +1,46 @@
+﻿<Window x:Class="Airplanes_desktop.View.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airplanes_desktop.View"
+        mc:Ignorable="d"
+        Title="Игра" Height="700" Width="1250">
+    <Grid
+        Style="{DynamicResource BackgroundWindowGradient}">
+
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="200" Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock
+            x:Name="question"
+            VerticalAlignment="Top" HorizontalAlignment="Center"
+            Text="Первый пассажирский самолёт, преодолевший сверхзвуковой барьер -" TextWrapping="Wrap"
+            Width="900" TextAlignment="Center" Margin="0,60,0,0" FontSize="36" FontFamily="Malgun Gothic" Foreground="#FF0A245E" FontStyle="Italic" FontWeight="Bold"
+            />
+        <RadioButton
+            x:Name="firstAnswer"
+            Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+            Content="Ту - 144"  FontFamily="Malgun Gothic" Foreground="#FF0A245E" FontSize="24" FontStyle="Italic" FontWeight="Bold" VerticalContentAlignment="Center" Margin="200,0,0,150"
+            />
+        <RadioButton
+            x:Name="secondAnswer"
+            Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+            Content="Concorde"  FontFamily="Malgun Gothic" Foreground="#FF0A245E" FontSize="24" FontStyle="Italic" FontWeight="Bold" VerticalContentAlignment="Center" Margin="200,0,0,0"
+            />
+        <RadioButton
+            x:Name="thirdAnswer"
+            Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+            Content="Ил - 96"  FontFamily="Malgun Gothic" Foreground="#FF0A245E" FontSize="24" FontStyle="Italic" FontWeight="Bold" VerticalContentAlignment="Center" Margin="200,150,0,0"
+            />
+        <Button
+            Style="{DynamicResource ButtonStyleMainMenu}"
+            Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right"
+            Height="50" Width="200"
+            Content="Ответить" Margin="0,0,30,30" Click="Button_Click"/>
+    </Grid>
+</Window>

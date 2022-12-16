@@ -33,7 +33,10 @@ namespace Airplanes_desktop.View
 
         private void GameButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Сейчас вам будет задано 10 вопросов, \nна каждый из них вам нужно будет выбрать 1 ответ из 3 предложенных\n Удачи)", "Правила игры", MessageBoxButton.OK, MessageBoxImage.Information);
+            GameWindow gameWindow = new GameWindow();
+            gameWindow.Show();
+            this.Close();
         }
 
         private void AboutProgramButton_Click(object sender, RoutedEventArgs e)
