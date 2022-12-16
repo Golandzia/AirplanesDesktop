@@ -1,0 +1,272 @@
+﻿<Window x:Name="window" x:Class="Airplanes_desktop.View.HandbookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="HandbookWindow" Height="700" Width="1250">
+    
+
+    
+    <ScrollViewer x:Name="scrollViewer">
+        <Grid x:Name="grid" Style="{DynamicResource BackgroundWindowGradient}" MinHeight="2500" MinWidth="1250">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="250"/>
+                <ColumnDefinition MinWidth="250"/>
+                <ColumnDefinition MinWidth="250"/>
+                <ColumnDefinition MinWidth="250"/>
+                <ColumnDefinition MinWidth="250"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition MinHeight="200"/>
+                <RowDefinition MinHeight="300"/>
+
+                <RowDefinition MinHeight="200"/>
+                <RowDefinition MinHeight="300"/>
+
+                <RowDefinition MinHeight="200"/>
+                <RowDefinition MinHeight="300"/>
+
+                <RowDefinition MinHeight="200"/>
+                <RowDefinition MinHeight="300"/>
+
+                <RowDefinition MinHeight="200"/>
+                <RowDefinition MinHeight="300"/>
+            </Grid.RowDefinitions>
+
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Column="0" HorizontalAlignment="Right" Height="2500" Grid.RowSpan="10" VerticalAlignment="Top" Width="1.3"/>
+
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" Height="300" Width="1.3"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" Height="300" Width="1.3"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Column="1" Grid.Row="7" HorizontalAlignment="Right" Height="300" Width="1.3"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Column="1" Grid.Row="9" HorizontalAlignment="Right" Height="300" Width="1.3"/>
+
+            <Border Style="{DynamicResource BorderStyleMainHandbook}" 
+                Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="1" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="2" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="3" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="4" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="5" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="6" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="7" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="8" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="9" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+            <Border Style="{DynamicResource BorderStyleMainHandbook}"
+                Grid.Row="10" Grid.ColumnSpan="5" VerticalAlignment="Bottom"/>
+
+            <Image Grid.Row="0" Grid.Column="0" Width="200" Source="/Resources/pictures/Logos/airbus_logo.png" />
+            <TextBlock Style="{DynamicResource TextBlockManufactureQuote}"
+                Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="4"
+                Text="Pioneering sustainable aerospace for a safe and united world"/>
+            <TextBlock Style="{DynamicResource TextBlockAboutManufacture}"
+                Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="4"
+                Text="Airbus - мировой пионер в аэрокосмической отрасли, работающий в сфере коммерческих самолетов, вертолетов, оборонной и космической промышленности. Одна из крупнейших авиастроительных компаний в мире, образованная в конце 1960-х годов путём слияния нескольких европейских авиапроизводителей."
+             />
+
+            <Image Grid.Row="2" Grid.Column="0" Width="200" Source="/Resources/pictures/Logos/Boeing_logo.png" />
+            <TextBlock Style="{DynamicResource TextBlockManufactureQuote}"
+                Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4"
+                Text="One destination. A world of solutions."/>
+            <TextBlock Style="{DynamicResource TextBlockAboutManufacture}"
+                Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4"
+                Text="Boeing является ведущей мировой авиакосмической корпорацией c более чем столетней историей и крупнейшим производителем пассажирских самолетов. Заказчики компании находятся в более чем 150 странах мира. По объемам продаж Boeing является одним из крупнейших экспортеров в США. Компания Boeing насчитывает более 140 000 сотрудников в 65 странах мира."
+             />
+
+            <Image Grid.Row="4" Grid.Column="0" Width="200" Source="/Resources/pictures/Logos/Concorde_logo.png" />
+            <TextBlock Style="{DynamicResource TextBlockManufactureQuote}"
+                Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="4"
+                Text="Arrive before you leave"/>
+            <TextBlock Style="{DynamicResource TextBlockAboutManufacture}"
+                Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="4" Margin="15,50,0,0" Height="Auto"
+                Text="История создания Concorde начинается в 1950-х годах. Несколько стран – США, Франция, Великобритания и СССР – пришли к идее создать сверхзвуковой пассажирский самолет. Американцы выбыли из «гонки за скорость», сопоставив расходы и перспективы развития проекта. Советский Союз продолжил изыскания, разработав Ту-144. Однако, производства закрылись менее чем через год после старта продаж"
+             />
+
+            <Image Grid.Row="6" Grid.Column="0" Width="200" Source="/Resources/pictures/Logos/il_logo.png" />
+            <TextBlock Style="{DynamicResource TextBlockManufactureQuote}"
+                Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="4"
+                Text="Безусловная свобода передвижений"/>
+            <TextBlock Style="{DynamicResource TextBlockAboutManufacture}"
+                Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="4" Margin="15,50,0,0" Height="Auto"
+                Text="Публичное акционерное общество «Объединенная авиастроительная корпорация» (ПАО «ОАК») создано 20 ноября 2006 г. (до апреля 2015 года ОАО «ОАК»). Приоритетными направлениями деятельности ПАО «ОАК» и входящих в Корпорацию компаний, являются: разработка, производство, реализация, сопровождение эксплуатации, гарантийное и сервисное обслуживание, модернизация, ремонт и утилизация авиационной техники гражданского и военного назначения."
+             />
+
+            <Image Grid.Row="8" Grid.Column="0" Width="200" Source="/Resources/pictures/Logos/tu_logo.png" />
+            <TextBlock Style="{DynamicResource TextBlockManufactureQuote}"
+                Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="4"
+                Text="ТУПОЛЕВ – Традиции. Уважение. Профессионализм. Ответственность. Лидерство. Единство. Верность."/>
+            <TextBlock Style="{DynamicResource TextBlockAboutManufacture}"
+                Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="4" Margin="15,80,0,0"
+                Text="ПАО «Туполев» – ведущее российское предприятие в области проектирования, производства и послепродажного сопровождения ракетоносцев и самолетов специального назначения. Является головным предприятием дивизиона стратегической и специальной авиации Объединенной авиастроительной корпорации (ПАО «ОАК» под управлением ГК «Ростех»)."
+             />
+
+
+            <Image Style="{DynamicResource ImageMainAirplanePhoto}" Grid.Column="0" Grid.Row="1"
+                   Source="/Resources/Pictures/MainAirplanePhotos/A380.png"
+                   Margin="0,10,0,0"/>
+            <TextBlock Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="0" Grid.Row="1"
+                Text="AIRBUS A380">
+            </TextBlock>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="AirbusA380_Button"
+                Grid.Column="0" Grid.Row="1" Click="AirbusA380_Button_Click"/>
+            <Image Style="{DynamicResource ImageMainAirplanePhoto}"
+                   Grid.Column="1" Grid.Row="1"
+                   Source="/Resources/Pictures/MainAirplanePhotos/A350.png" 
+                   RenderTransformOrigin="0.5,0.5" Margin="0,10,0,0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="21.801"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="1" Grid.Row="1"
+                Text="AIRBUS A350-900">
+            </TextBlock>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="AirbusA350_Button"
+                Grid.Column="1" Grid.Row="1" Click="AirbusA350_Button_Click"/>
+
+            <Image Style="{DynamicResource ImageMainAirplanePhoto}" Grid.Column="0" Grid.Row="3"
+                Source="/Resources/Pictures/MainAirplanePhotos/747.png" 
+                RenderTransformOrigin="0.5,0.5" Margin="0,10,0,0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="0" Grid.Row="3"
+                Text="BOEING 747">
+            </TextBlock>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="Boeing747_Button"
+                Grid.Column="0" Grid.Row="3" Click="Boeing747_Button_Click"/>
+            <Image Style="{DynamicResource ImageMainAirplanePhoto}" Grid.Column="1" Grid.Row="3"
+                Source="/Resources/Pictures/MainAirplanePhotos/777.png" RenderTransformOrigin="0.5,0.5" Margin="0,10,0,0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="1" Grid.Row="3"
+                Text="BOEING 777"/>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="Boeing777_Button"
+                Grid.Column="1" Grid.Row="3" Click="Boeing777_Button_Click"/>
+
+            <Image Style="{DynamicResource ImageMainAirplanePhoto}" Grid.Column="0" Grid.Row="5"
+                Source="/Resources/Pictures/MainAirplanePhotos/Concord.png" RenderTransformOrigin="0.5,0.5" Margin="0,10,0,0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="0" Grid.Row="5"
+                Text="CONCORDE"/>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="Concorde_Button"
+                Grid.Column="0" Grid.Row="5" Click="Concorde_Button_Click"/>
+
+            <Image 
+                Style="{DynamicResource ImageMainAirplanePhoto}"
+                Grid.Column="0" Grid.Row="7"
+                Source="/Resources/Pictures/MainAirplanePhotos/il114.png" Margin="0,10,0,0"/>
+            <TextBlock 
+                Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="0" Grid.Row="7"
+                Text="ИЛ - 114"/>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="IL114_Button"
+                Grid.Column="0" Grid.Row="7" Click="IL114_Button_Click"/>
+            <Image
+                Style="{DynamicResource ImageMainAirplanePhoto}"
+                Grid.Column="1" Grid.Row="7"
+                Source="/Resources/Pictures/MainAirplanePhotos/il96.png"
+                RenderTransformOrigin="0.5,0.5" Margin="0,10,0,0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock
+                Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="1" Grid.Row="7"
+                Text="ИЛ - 96"/>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="IL96_Button"
+                Grid.Column="1" Grid.Row="7" Click="IL96_Button_Click"/>
+
+            <Image
+                Style="{DynamicResource ImageMainAirplanePhoto}"
+                Grid.Column="0" Grid.Row="9"
+                Source="/Resources/Pictures/MainAirplanePhotos/tu144.png" RenderTransformOrigin="0.5,0.5" Margin="0,10,0,0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock
+                Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="0" Grid.Row="9"
+                Text="ТУ - 144"/>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="TU144_Button"
+                Grid.Column="0" Grid.Row="9" Click="TU144_Button_Click"/>
+            <Image
+                Style="{DynamicResource ImageMainAirplanePhoto}"
+                Grid.Column="1" Grid.Row="9"
+                Source="/Resources/Pictures/MainAirplanePhotos/tu204.png" RenderTransformOrigin="0.5,0.5" Margin="0,10,0,0">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock
+                Style="{DynamicResource TextBlockAirplaneModelName}"
+                Grid.Column="1" Grid.Row="9"
+                Text="ТУ - 204"/>
+            <Button Style="{DynamicResource ButtonHandbook}" x:Name="TU204_Button"
+                Grid.Column="1" Grid.Row="9" Click="TU204_Button_Click"/>
+
+
+        </Grid>
+    </ScrollViewer>
+</Window>

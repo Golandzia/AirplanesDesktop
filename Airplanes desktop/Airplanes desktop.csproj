@@ -1,0 +1,157 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Airplanes_desktop</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Pictures\airbus_logo.png" />
+    <None Remove="Resources\Pictures\boeing_logo.png" />
+    <None Remove="Resources\Pictures\concorde_logo.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_747.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_777.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_a350.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_a380.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_concorde.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_il114.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_il96.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_tu144.png" />
+    <None Remove="Resources\Pictures\PhotosComfort\comfort_tu204.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_747.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_777.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_Concorde.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_il114.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_il96.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_tu144.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_tu204.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_а350.png" />
+    <None Remove="Resources\Pictures\PhotosConstruction\construction_а380.png" />
+    <None Remove="Resources\Pictures\il_logo.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\747.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\777.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\A350.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\A380.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\concord.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\il114.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\il96.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\tu144.png" />
+    <None Remove="Resources\Pictures\MainAirplanePhotos\tu204.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_747.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_777.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_a350.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_a380.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_concorde.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_il114.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_il96.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_tu144.png" />
+    <None Remove="Resources\Pictures\PhotosCrewCabine\crew_cabine_tu204.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_747.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_777.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_a350.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_a380.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_concorde.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_il114.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_il96.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_tu144.png" />
+    <None Remove="Resources\Pictures\PhotosInFlight\in_flight_tu204.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_747.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_777.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_a350.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_a380.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_concorde.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_il114.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_il96.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_tu144.png" />
+    <None Remove="Resources\Pictures\PhotosMainAirplane\main_photo_tu204.png" />
+    <None Remove="Resources\Pictures\tu_logo.png" />
+    <None Remove="View\AirplanesScreensaveDesktop.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpressMvvm" Version="22.1.3" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_a350.png" />
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_747.png" />
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_777.png" />
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_a380.png" />
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_concorde.png" />
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_il114.png" />
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_il96.png" />
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_tu144.png" />
+    <Resource Include="Resources\Pictures\PhotosComfort\comfort_tu204.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_747.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_777.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_il114.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_il96.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_tu144.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_tu204.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_а350.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_а380.png" />
+    <Resource Include="Resources\Pictures\PhotosConstruction\construction_Concorde.png" />
+    <Resource Include="Resources\Pictures\Logos\airbus_logo.png" />
+    <Resource Include="Resources\Pictures\Logos\boeing_logo.png" />
+    <Resource Include="Resources\Pictures\Logos\concorde_logo.png" />
+    <Resource Include="Resources\Pictures\Logos\il_logo.png" />
+    <Resource Include="Resources\Pictures\Logos\tu_logo.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\747.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\777.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\A350.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\A380.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\concord.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\il114.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\il96.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\tu144.png" />
+    <Resource Include="Resources\Pictures\MainAirplanePhotos\tu204.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_747.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_777.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_a350.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_a380.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_concorde.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_il114.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_il96.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_tu144.png" />
+    <Resource Include="Resources\Pictures\PhotosCrewCabine\crew_cabine_tu204.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_747.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_777.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_a350.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_a380.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_concorde.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_il114.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_il96.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_tu144.png" />
+    <Resource Include="Resources\Pictures\PhotosInFlight\in_flight_tu204.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_747.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_777.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_a350.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_a380.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_concorde.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_il114.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_il96.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_tu144.png" />
+    <Resource Include="Resources\Pictures\PhotosMainAirplane\main_photo_tu204.png" />
+    <Resource Include="View\AirplanesScreensaveDesktop.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

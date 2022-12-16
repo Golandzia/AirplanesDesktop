@@ -1,0 +1,18 @@
+﻿<Application x:Class="Airplanes_desktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Airplanes_desktop"
+             StartupUri="View/MainMenueWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Assets/Styles/Windows/WindowStyle.xaml"/>
+                <ResourceDictionary Source="Assets/Styles/Buttons/ButtonMainMenue.xaml"/>
+                <ResourceDictionary Source="Assets/Styles/Buttons/ButtonHandbook.xaml"/>
+                <ResourceDictionary Source="Assets/Styles/TextBoxes/TextBlockHandbook.xaml"/>
+                <ResourceDictionary Source="Assets/Styles/Borders/BorderHandbook.xaml"/>
+                <ResourceDictionary Source="Assets/Styles/Images/ImageHandbook.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
