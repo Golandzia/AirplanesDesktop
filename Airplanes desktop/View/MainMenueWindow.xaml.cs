@@ -41,7 +41,9 @@ namespace Airplanes_desktop.View
 
         private void AboutProgramButton_Click(object sender, RoutedEventArgs e)
         {
-
+            AboutProgramWindow aboutProgramWindow = new AboutProgramWindow();
+            aboutProgramWindow.Show();
+            this.Close();
         }
     }
 }
